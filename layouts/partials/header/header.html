@@ -11,6 +11,8 @@
 
         {{- if eq .Kind "taxonomyTerm" -}}
           {{- ( ( i18n .Data.Singular 2 ) | default .Title ) -}}
+        {{- else if eq .Kind "home" -}}
+          {{- .Site.Title -}}
         {{- else if eq .Data.Singular "author" -}}
           {{- partial "data/author/displayName" . -}}
         {{- else -}}

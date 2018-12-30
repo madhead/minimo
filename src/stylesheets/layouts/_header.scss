@@ -13,8 +13,7 @@
 .site-header {
   display: none;
 
-  @at-root .home &,
-    .error404 & {
+  .error404 & {
     display: flex;
   }
 }
