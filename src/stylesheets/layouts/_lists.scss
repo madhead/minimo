@@ -3,6 +3,8 @@
   list-style: none;
 
   &-container {
+    min-width: $list-container__min-width;
+
     .entry + & {
       margin-top: 2.5em;
     }
