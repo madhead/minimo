@@ -32,6 +32,22 @@
 
 </section>
 
+<section class='widget widget-sidebar_menu sep-after'>
+  <nav id='sidebar-menu' class='menu sidebar-menu' aria-label='{{ i18n "sidebarMenu" }}'>
+    <div class='container'>
+      <ul>
+      {{- range where .Sites "Language.Lang" "!=" .Site.Language.Lang -}}
+        <li class='item'>
+          <a href='{{ .BaseURL }}'>
+            {{- .Language.LanguageName -}}
+          </a>
+        </li>
+      {{- end -}}
+      </ul>
+    </div>
+  </nav>
+</section>
+
 {{- end -}}
 
 {{- define "menu_item" -}}
