@@ -21,7 +21,7 @@ mirror = ""
 
 [social_menu]
 title = ""
-platforms = ["email","telegram","gitlab","github","stackoverflow","linkedin","instagram","youtube","twitter"]
+platforms = ["email","telegram","github","gitlab","stackoverflow","linkedin","instagram","youtube","twitter","mastodon"]
 
 [taxonomy_cloud]
 title = ""
